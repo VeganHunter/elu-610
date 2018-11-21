@@ -14,20 +14,18 @@ let string_of_state (cmds,stack) =
 (* Question 4.2 *)
 let step state =
   match state with
-  (* Errors *)
-  | [], _                                                               -> Error ("Nothing to step",state)
-  | (Add | Mul | Sub | Div | Rem | Pop | Swap)  :: _, []                -> Error ("Zero arguments", state) 
-  | (Add | Mul | Sub | Div | Rem | Swap)        :: _, _ :: []           -> Error ("Only one argument", state) 
-  | (Div | Rem)                                 :: _, _ :: 0 :: _       -> Error ("Division by 0", state)
+  | [], _ -> Error("Nothing to step",state)
+  | (Add | Mul | Sub | Div | Rem | Pop | Swap) :: q, -> Error ("No integers", state) 
+  | Div :: q, a :: 0 :: stack	-> Error("Division by 0", state)
   (* Valid configurations *)
-  | Add       :: q, a :: b :: stack	    -> Ok (q, (a+b) :: stack)
-  | Mul       :: q, a :: b :: stack  	-> Ok (q, (a*b) :: stack)
-  | Sub       :: q, a :: b :: stack	    -> Ok (q, (a-b) :: stack)
-  | Div       :: q, a :: b :: stack	    -> Ok (q, (a/b) :: stack)
-  | Rem       :: q, a :: b :: stack	    -> Ok (q, (a mod b) :: stack)
-  | Push of n :: q, stack               -> Ok (q, n :: stack)
-  | Pop       :: q, a :: stack		    -> Ok (q, stack)
-  | Swap      :: q, a :: b :: stack		-> Ok (q, b :: a :: stack)
+  | Add :: q, a :: b :: stack	-> Ok (q, (a+b) :: stack)
+  | Mul :: q, a :: b :: stack	-> Ok (q, (a*b) :: stack)
+  | Sub :: q, a :: b :: stack	-> Ok (q, (a-b) :: stack)
+  | Div :: q, a :: b :: stack	-> Ok (q, (a/b) :: stack)
+  | Div :: q, a :: b :: stack	-> Ok (q, (a/b) :: stack)
+  | Push
+  | Pop :: q, a :: stack				-> Ok (q, stack)
+  | Swap :: q, a :: b :: stack			-> Ok (q, b :: a :: stack)
 
 let eval_program (numargs, cmds) args =
   let rec execute = function
