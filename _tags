@@ -1,0 +1,7 @@
+#the following line can be extended by adding "or <directory_name>" if you organize your files with sudirectories
+<expr> or <pfx> or <utils>: include
+true: warn_a
+true: debug
+# use of menhir
+true: use_menhir
+true: explain

@@ -1,0 +1,127 @@
+AUTHORS
+-------
+
+- NAME1
+- NAME2
+…
+
+===============
+
+Description of the project
+--------------------------
+
+This μ-project is a very simple compiler…
+
+===============
+
+Sources
+-------
+
+Git repository: https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
+
+(obviously, you _will_ use a version control system such as Git, IMT
+Atlantique provides a project management platform: use it!)
+
+Release : tag 1.0 or commit acdeacdacdacdacd
+
+===============
+
+How to…
+-------
+
+…retrieve the sources?
+
+  git clone https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
+
+…compile?
+
+  ocamlbuild …
+
+…execute and test?
+
+  ocamlbuild main.byte -- TESTFILE.pfx
+
+
+===============
+
+Structure of the project
+------------------------
+
+The project is organized as following:
+
+Explain here the organization of your project, what is the use of each file or
+group of files, etc.
+
+You may also show the file tree as the following example (project_skeleton):
+
+project
+├── pfxAst.ml
+├── pfxLexer.mll
+├── pfxMain.ml
+├── pfxParser.mly
+├── README
+├── _tags
+├── tests
+│   ├── ex_course1.pfx
+│   ├── ex_course.pfx
+│   ├── first.pfx
+│   ├── prog0.pfx
+│   ├── prog_1arg_0.pfx
+│   ├── prog_1arg_1.pfx
+│   ├── prog1.pfx
+│   ├── prog_2arg_0.pfx
+│   ├── prog2.pfx
+│   ├── prog_3arg_0.pfx
+│   ├── prog3.pfx
+│   ├── prog4.pfx
+│   ├── prog_5arg_0.pfx
+│   ├── prog5.pfx
+│   ├── README
+│   └── second.pfx
+└── utils
+    ├── lexingII.ml
+    ├── lexingII.mli
+    ├── location.ml
+    └── location.mli
+
+===============
+
+Progress
+--------
+
+- We stopped at question 10.1 (proof of derivation)
+- There is still a bug in question 8.3 (new version of generate function)
+- …
+
+===============
+
+Know bugs and issues
+--------------------
+
+- We were not able to manage xxx…
+- Compiler fails when xxx…
+- …
+
+===============
+
+Helpful resources
+-----------------
+
+- we used Stack Overflow to solve the problem of xxx :
+  https://stackoverflow/xxxxxxi
+  https://stackoverflow/yyyyyy
+- someone on GitHub provided an interesting example very similar to the answer of the question x.y : https://github.com/xxxx
+- …
+
+===============
+
+Difficulties
+------------
+
+- team programming: having to use a VCS such as git and avoiding conflicts
+- thinking functional
+- changing habits by using an unknown language
+- Not a single difficulty: the project was so easy that my 8-old brother did it
+  completely; the Ocaml language is so nice I enjoyed the project, …
+- …
+
