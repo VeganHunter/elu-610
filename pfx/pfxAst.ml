@@ -19,3 +19,4 @@ let string_of_commands cmds = String.concat " " (List.map string_of_command cmds
 open Printf
 let string_of_program (args, cmds) =
   sprintf "%i args: %s\n" args (string_of_commands cmds)
+
