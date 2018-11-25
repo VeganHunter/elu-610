@@ -13,7 +13,7 @@ let digit = ['0'-'9']
 let integer = digit+
 
 rule token = parse
-  (* newlines *)
+  (* newlineslexbuf *)
   | newline { Location.incr_line lexbuf; token lexbuf }
   (* blanks *)
   | blank + { token lexbuf }
@@ -24,7 +24,13 @@ rule token = parse
   (* integers *)
   | integer as nb           { mk_int nb (Location.curr lexbuf)}
   (* commands  *)
-  (***** TO COMPLETE *****)
+  | "+"      { Add }
+  | "-"      { Sub }
+  | "/"      { Div }
+  | "*"      { Mul }
+  | "%"      { Rem }
+  | "("      { LPAR }
+  | ")"      { RPAR }
   (* illegal characters *)
   | _ as c  {
       raise (LexingII.Error(Printf.sprintf "Illegal character '%c': " c, Location.curr lexbuf))
