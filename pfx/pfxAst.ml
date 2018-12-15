@@ -4,7 +4,7 @@ type program = int * command list
 
 (* add here all useful functions and types  related to the AST: for instance  string_of_ functions *)
 
-let rec string_of_command = function
+let string_of_command = function
   | Add -> "add"
   | Mul -> "mul"
   | Sub -> "sub"

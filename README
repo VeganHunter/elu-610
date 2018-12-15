@@ -16,10 +16,7 @@ This μ-project is a very simple compiler…
 Sources
 -------
 
-Git repository: https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
-
-(obviously, you _will_ use a version control system such as Git, IMT
-Atlantique provides a project management platform: use it!)
+Git repository: https://github.com/VeganHunter/elu-610
 
 Release : tag 1.0 or commit acdeacdacdacdacd
 
@@ -30,7 +27,7 @@ How to…
 
 …retrieve the sources?
 
-  git clone https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
+  git clone https://github.com/VeganHunter/elu-610
 
 …compile?
 
@@ -88,8 +85,8 @@ project
 Progress
 --------
 
-- We stopped at question 10.1 (proof of derivation)
-- There is still a bug in question 8.3 (new version of generate function)
+- We stopped at exercise 7 (proof of derivation)
+- There is still a bug in question xxx... (new version of generate function)
 - …
 
 ===============
@@ -97,7 +94,8 @@ Progress
 Know bugs and issues
 --------------------
 
-- We were not able to manage xxx…
+- We were not able to manage writing test programs
+
 - Compiler fails when xxx…
 - …
 
@@ -120,7 +118,7 @@ Difficulties
 - team programming: having to use a VCS such as git and avoiding conflicts
 - thinking functional
 - changing habits by using an unknown language
-- Not a single difficulty: the project was so easy that my 8-old brother did it
-  completely; the Ocaml language is so nice I enjoyed the project, …
 - …
+
+- Getting used to a new language is always difficult, so we had some trouble really understanding how to use OCaml in an efficient manner.
 

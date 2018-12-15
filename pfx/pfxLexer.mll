@@ -24,13 +24,15 @@ rule token = parse
   (* integers *)
   | integer as nb           { mk_int nb (Location.curr lexbuf)}
   (* commands  *)
-  | "+"      { Add }
-  | "-"      { Sub }
-  | "/"      { Div }
-  | "*"      { Mul }
-  | "%"      { Rem }
-  | "("      { LPAR }
-  | ")"      { RPAR }
+  | "add"      { Add }
+  | "sub"      { Sub }
+  | "div"      { Div }
+  | "mul"      { Mul }
+  | "rem"      { Rem }
+  | "pop"	   { Pop }
+  | "swap"	   { Swap }
+  | "push"	   { Push }
+  
   (* illegal characters *)
   | _ as c  {
       raise (LexingII.Error(Printf.sprintf "Illegal character '%c': " c, Location.curr lexbuf))
