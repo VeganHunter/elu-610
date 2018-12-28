@@ -32,11 +32,11 @@ How to…
 
 …compile?
 
-  ocamlbuild …
+  ocamlbuild exprMain.byte
 
 …execute and test?
 
-  ocamlbuild main.byte -- TESTFILE.pfx
+  ocamlbuild exprMain.byte -- tests/testfile.pfx
 
 
 ===============
