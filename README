@@ -11,7 +11,6 @@ Description of the project
 
 This project is a very simple compiler that uses the ocamllex lexing tool (lexer) as well as the menhir parsing tool (parser).
 
-
 ===============
 
 Sources
