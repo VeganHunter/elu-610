@@ -19,7 +19,7 @@ Sources
 
 Git repository: https://github.com/VeganHunter/elu-610
 
-Release : tag 1.0 or commit [PLACEHOLDER]
+Release : tag 1.0 or commit "final commit"
 
 ===============
 
@@ -46,38 +46,51 @@ Structure of the project
 
 The project is organized as following:
 
-[PLACEHOLDER] - changer les tests
-
 project
-├── pfxAst.ml
-├── pfxLexer.mll
-├── pfxMain.ml
-├── pfxParser.mly
-├── README
-├── Answer_to_questions.odt
-├── _tags
-├── tests
-│   ├── ex_course1.pfx
-│   ├── ex_course.pfx
-│   ├── first.pfx
-│   ├── prog0.pfx
-│   ├── prog_1arg_0.pfx
-│   ├── prog_1arg_1.pfx
-│   ├── prog1.pfx
-│   ├── prog_2arg_0.pfx
-│   ├── prog2.pfx
-│   ├── prog_3arg_0.pfx
-│   ├── prog3.pfx
-│   ├── prog4.pfx
-│   ├── prog_5arg_0.pfx
-│   ├── prog5.pfx
-│   ├── README
-│   └── second.pfx
+└── _build
+    ├── _digests
+    ├── _log
+    ├── exprMain.ml
+    ├── exprMain.ml.depends
+└── expr
+    ├── binOp.ml
+    ├── binOp.mli
+    ├── exprAst.ml
+    ├── exprAst.mli
+    ├── exprEval.ml
+    ├── exprEval.mli
+    ├── exprLexer.mll
+    ├── exprParser.mly
+    ├── exprToPfx.ml
+    ├── exprToPfx.mli
+└── expr_fun
+    ├── exprAst.ml
+    ├── exprAst.mli
+    ├── exprLexer.mll
+    ├── exprParser.mly
+└── pfx
+    ├── pfxAst.ml
+    ├── pfxEvalml
+    ├── pfxEval.ml~
+    ├── pfxLexer.mll
+    ├── pfxParser.mly
+└── tests
+    ├── ex_course.pfx
+    ├── ex_course1.pfx
+    ├── incorrect_args_numb.pfx
+    ├── incorrrect_args_numb2.pfx
+    ├── push_error.pfx
+    └── second.pfx
 └── utils
     ├── lexingII.ml
     ├── lexingII.mli
     ├── location.ml
     └── location.mli
+├── Answer_to_questions.odt
+├── README
+├── _tags
+├── exprMain.ml
+├── pfxVM.ml
 
 ===============
 
@@ -91,16 +104,13 @@ Progress
 Know bugs and issues
 --------------------
 
-- We were not able to manage writing test programs
-
-[PLACEHOLDER]
+- We were not able to actually execute the test programs we wrote.
 
 ===============
 
 Helpful resources
 -----------------
 
-- 
 https://v1.realworldocaml.org/v1/en/html/parsing-with-ocamllex-and-menhir.html?fbclid=IwAR0L25FBvowmVn3u3ILc2UJPlw9zWfrCOIwGrZrEqWLVLRxXp5LM8jzGrJw
 https://svn.telecom-bretagne.eu/repository/ens-eleves/Elu/LangLog/tp-compil.pdf
 https://caml.inria.fr/pub/docs/manual-ocaml/lexyacc.html
