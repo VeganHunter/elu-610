@@ -19,7 +19,7 @@ Sources
 
 Git repository: https://github.com/VeganHunter/elu-610
 
-Release : tag 1.0 or commit acdeacdacdacdacd
+Release : tag 1.0 or commit [PLACEHOLDER]
 
 ===============
 
@@ -46,10 +46,7 @@ Structure of the project
 
 The project is organized as following:
 
-Explain here the organization of your project, what is the use of each file or
-group of files, etc.
-
-You may also show the file tree as the following example (project_skeleton):
+[PLACEHOLDER] - changer les tests
 
 project
 ├── pfxAst.ml
@@ -87,8 +84,6 @@ Progress
 --------
 
 - We stopped at exercise 7 (proof of derivation)
-- There is still a bug in question xxx... (new version of generate function)
-- …
 
 ===============
 
@@ -97,29 +92,19 @@ Know bugs and issues
 
 - We were not able to manage writing test programs
 
-- Compiler fails when xxx…
-- …
+[PLACEHOLDER]
 
 ===============
 
 Helpful resources
 -----------------
 
-- we used Stack Overflow to solve the problem of xxx :
-  https://stackoverflow/xxxxxxi
-  https://stackoverflow/yyyyyy
-- someone on GitHub provided an interesting example very similar to the answer of the question x.y : https://github.com/xxxx
-- …
+- None in particular.
 
 ===============
 
 Difficulties
 ------------
 
-- team programming: having to use a VCS such as git and avoiding conflicts
-- thinking functional
-- changing habits by using an unknown language
-- …
-
-- Getting used to a new language is always difficult, so we had some trouble really understanding how to use OCaml in an efficient manner.
+- Getting used to a new language is always difficult, so we had some trouble really understanding how to use OCaml in an efficient manner, especially since it makes use of a novel programming paradigm.
 
