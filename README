@@ -76,6 +76,7 @@ project
 └── tests
     ├── ex_course.pfx
     ├── ex_course1.pfx
+    ├── general_test.pfx
     ├── incorrect_args_numb.pfx
     ├── incorrrect_args_numb2.pfx
     ├── push_error.pfx
